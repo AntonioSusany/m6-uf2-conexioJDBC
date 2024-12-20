@@ -63,6 +63,10 @@ public class DatabaseExample {
         }
     }
 
+    public static void crear(String url, String user, String password){
+        
+    }
+
     public static void veureEquips(String url, String user, String password) {
         String query = "SELECT * FROM Equipo";
 
@@ -177,7 +181,7 @@ public class DatabaseExample {
             Connection con = DriverManager.getConnection(url, user, password);
             PreparedStatement pst = con.prepareStatement(query)
         ) {
-            pst.setString(1, nom_equip);
+            pst.setString(1, nom_equip);                                                                                                                            
             pst.setString(2, ciutat_equip);
             pst.setInt(3, fundacio_equip);
             pst.setInt(4, id_estadi);
